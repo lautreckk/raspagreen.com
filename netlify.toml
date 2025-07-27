@@ -1,0 +1,11 @@
+[build]
+  publish = "raspagreen.com"
+  command = "echo 'Static site already built'"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

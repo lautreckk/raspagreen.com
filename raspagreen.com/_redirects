@@ -1,0 +1,5 @@
+# Netlify redirects
+/*    /index.html   200
+
+# Redirecionamento para API (quando você tiver o backend hospedado)
+/api/*  https://seu-backend-url.com/api/:splat  200
