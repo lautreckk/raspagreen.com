@@ -1,10 +1,12 @@
 # Netlify redirects
 
-# Redirecionar funções para backend 
-/.netlify/functions/claim  https://raspagreen-backend.onrender.com/api/scratch/claim  200
-/.netlify/functions/*  https://raspagreen-backend.onrender.com/api/:splat  200
+# Funções do Netlify (executam localmente, não redirecionam)
+# /.netlify/functions/run será servida diretamente pelo Netlify
 
-# Redirecionar API para backend (com headers CORS)
+# Redirecionar claim específico para backend 
+/.netlify/functions/claim  https://raspagreen-backend.onrender.com/api/scratch/claim  200
+
+# Redirecionar API para backend  
 /api/*  https://raspagreen-backend.onrender.com/api/:splat  200
 
 # Health check direto
