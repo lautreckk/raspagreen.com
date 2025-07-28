@@ -1,10 +1,8 @@
 # Netlify redirects
 
-# Funções do Netlify (executam localmente, não redirecionam)
+# Funções do Netlify executam localmente - não precisam de redirects
 # /.netlify/functions/run será servida diretamente pelo Netlify
-
-# Redirecionar claim específico para backend 
-/.netlify/functions/claim  https://raspagreen-backend.onrender.com/api/scratch/claim  200
+# /.netlify/functions/* NÃO pode ser redirecionado (causa erro de deploy)
 
 # Redirecionar API para backend  
 /api/*  https://raspagreen-backend.onrender.com/api/:splat  200
