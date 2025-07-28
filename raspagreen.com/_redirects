@@ -1,5 +1,11 @@
 # Netlify redirects
-/*    /index.html   200
 
-# Redirecionamento para API (quando você tiver o backend hospedado)
-/api/*  https://seu-backend-url.com/api/:splat  200
+# Redirecionar funções para backend 
+/.netlify/functions/claim  https://raspagreen-backend.onrender.com/api/scratch/claim  200
+/.netlify/functions/*  https://raspagreen-backend.onrender.com/api/:splat  200
+
+# Redirecionar API para backend
+/api/*  https://raspagreen-backend.onrender.com/api/:splat  200
+
+# Fallback para SPA
+/*    /index.html   200
